@@ -6,7 +6,7 @@
     <div>
 
       <div class="row">
-        <div class="col">
+        <div class="col-lg-3">
           <div class="d-flex">
             <div>
               <p-button icon="pi pi-file-excel" pTooltip="Eksport do Excel" [rounded]="true" [text]="true"
@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col-lg-3">
           <!--          categories-->
           <p-columnFilter field="category" matchMode="equals"  [showMenu]="false">
             <ng-template pTemplate="filter" let-value let-filter="filterCallback">
@@ -44,7 +44,7 @@
           </p-columnFilter>
         </div>
 
-        <div class="col">
+        <div class="col-lg-3">
 <!--          status-->
           <p-columnFilter field="status" matchMode="equals"  [showMenu]="false">
             <ng-template pTemplate="filter" let-value let-filter="filterCallback">
@@ -64,7 +64,7 @@
 
         </div>
 
-        <div class="col">
+        <div class="col-lg-3">
 <!--          area -->
           <p-columnFilter field="area" matchMode="equals"  [showMenu]="false">
             <ng-template pTemplate="filter" let-value let-filter="filterCallback">
