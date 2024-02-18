@@ -1,0 +1,122 @@
+<p-table #tasktable [first]="first" [rows]="rows" [value]="tasks" [paginator]="true" (onPage)="pageChange($event)"
+         selectionMode="single" [(selection)]="selectedTask" dataKey="id" styleClass="p-datatable-sm"
+         [tableStyle]="{'min-width': '50rem'}" stateStorage="session" stateKey="tasktable-session">
+
+  <ng-template pTemplate="caption">
+    <div class="mb-3">
+
+      <div class="row">
+        <div class="col-2 d-flex">
+          <div >
+            <p-button icon="pi pi-file-excel" pTooltip="Eksport do Excel" [rounded]="true" [text]="true"
+                      (click)="openExcelExportModal()"></p-button>
+          </div>
+
+          <div >
+            <p-button [rounded]="true" [text]="true" icon="pi pi-chevron-left" (click)="prev()"
+                      [disabled]="isFirstPage()"></p-button>
+          </div>
+          <div >
+            <p-button [rounded]="true" [text]="true" icon="pi pi-chevron-right" (click)="next()"
+                      [disabled]="isLastPage()"></p-button>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <!--          categories-->
+          <p-columnFilter field="category" matchMode="equals"  [showMenu]="false">
+            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+              <p-dropdown [ngModel]="value" [options]="categories" (onChange)="filter($event.value)"
+                          placeholder="dowolna kategoria"
+                          [showClear]="true">
+
+                <ng-template pTemplate="selectedItem" let-selectedItem>
+                  <span class="ml-1 mt-1">{{ selectedItem?.value }}</span>
+                </ng-template>
+                <ng-template let-option pTemplate="item">
+                  <span class="ml-1 mt-1">{{ option.value }}</span>
+                </ng-template>
+              </p-dropdown>
+            </ng-template>
+          </p-columnFilter>
+        </div>
+
+        <div class="col">
+<!--          status-->
+          <p-columnFilter field="status" matchMode="equals"  [showMenu]="false">
+            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+              <p-dropdown [ngModel]="value" [options]="statuses" (onChange)="filter($event.value)"
+                          placeholder="dowolny status"
+                          [showClear]="true">
+
+                <ng-template pTemplate="selectedItem" let-selectedItem>
+                  <span class="ml-1 mt-1">{{ selectedItem?.value }}</span>
+                </ng-template>
+                <ng-template let-option pTemplate="item">
+                  <span class="ml-1 mt-1">{{ option.value }}</span>
+                </ng-template>
+              </p-dropdown>
+            </ng-template>
+          </p-columnFilter>
+
+        </div>
+
+        <div class="col">
+<!--          area -->
+          <p-columnFilter field="area" matchMode="equals"  [showMenu]="false">
+            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+              <p-dropdown [ngModel]="value" [options]="areas" (onChange)="filter($event.value)"
+                          placeholder="jednostka/obszar"
+                          [showClear]="true">
+
+                <ng-template pTemplate="selectedItem" let-selectedItem>
+                  <span class="ml-1 mt-1">{{ selectedItem?.value }}</span>
+                </ng-template>
+                <ng-template let-option pTemplate="item">
+                  <span class="ml-1 mt-1">{{ option.value }}</span>
+                </ng-template>
+              </p-dropdown>
+            </ng-template>
+          </p-columnFilter>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+    </ng-template>
+
+  <ng-template pTemplate="header">
+    <tr>
+      <th scope="col">nr</th>
+      <th scope="col">data utworzenia</th>
+      <th scope="col">skrócona kategoria czynności</th>
+      <th scope="col">stan
+      </th>
+      <th scope="col">data plan.</th>
+      <th scope="col">obszar</th>
+      <th scope="col">osoba odpowiedzialna</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-task>
+    <tr [pSelectableRow]="task">
+      <td>{{ task.id }}</td>
+      <td>{{ task.creationDate | dateFormat }}</td>
+      <td>{{ task.category }}</td>
+      <td>{{ task.status }}</td>
+      <td>{{ task.planDate | dateFormat }}</td>
+      <td>{{ task.area }}</td>
+      <td>{{ task.responsible }}</td>
+    </tr>
+  </ng-template>
+
+
+</p-table>
+
+
+
+

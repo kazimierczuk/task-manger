@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "realizowane",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 2,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "realizowane",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 3,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "realizowane",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 4,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "realizowane",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 5,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Stałe wyłączenie MO",
+    "status": "realizowane",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Zabrze",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 6,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "nowe",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Zabrze",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 7,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Stałe wyłączenie MO",
+    "status": "realizowane",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 8,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Stałe wyłączenie MO",
+    "status": "odrzucone",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 9,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "realizowane",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 10,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "nowe",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 11,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "nowe",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Bytom",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 12,
+    "creationDate": "2021-04-23T18:25:43.511Z",
+    "category": "Tymczasowe wyłączenie MO",
+    "status": "nowe",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Gliwice",
+    "responsible": "Aplikacja RiN"
+  },
+  {
+    "id": 13,
+    "creationDate": "2012-04-23T18:25:43.511Z",
+    "category": "Czasowe wyłączenie MO",
+    "status": "nowe",
+    "planDate": "2012-04-23T18:25:43.511Z",
+    "area": "KA: Zabrze",
+    "responsible": "Aplikacja RiN"
+  }
+]

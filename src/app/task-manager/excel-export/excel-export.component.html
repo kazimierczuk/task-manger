@@ -1,0 +1,16 @@
+
+<div [ngSwitch]="status">
+  <div *ngSwitchCase="'generating'">
+    <p-progressBar  [value]="progress"></p-progressBar>
+  </div>
+  <div class="d-flex align-items-center justify-content-evenly" *ngSwitchCase="'generated'">
+      <p-button label="Pobierz plik" icon="pi pi-file-excel"  (click)="downloadFile()"></p-button>
+  </div>
+  <div class="d-flex align-items-center justify-content-evenly" *ngSwitchCase="'ready'">
+
+      <p-dropdown [options]="templates" optionLabel="name" placeholder=""></p-dropdown>
+      <p-button class="m-2 display-block"  label="Generuj" (click)="generateFile()"></p-button>
+
+  </div>
+</div>
+

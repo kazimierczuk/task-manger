@@ -1,0 +1,20 @@
+{
+"id": 1,
+"responsible": "Adam Nowak",
+"creationDate": "2024-01-23T00:00:00.000Z",
+"versionDate": "2023-01-23T00:00:00.000Z",
+"planDate": "2024-03-23T00:00:00.000Z",
+"startDate": "2024-01-24T00:00:00.000Z",
+"deliveryDate": "2024-01-25T00:00:00.000Z",
+"rnId": 123,
+"symbol": "WFX324",
+"taskDescription": "Szybkie zadanie do realizacji",
+"itemDescription": "Dom murowany",
+"remarks": "Prosba o pilną relizację",
+"status": "realizowane",
+"area": "O/Warszawa",
+"category": "windykacja",
+"competenceLevel": "L3",
+"caseType": "windykacja",
+"initiator": "Jan Kowalski"
+}

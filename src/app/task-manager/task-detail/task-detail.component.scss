@@ -1,0 +1,12 @@
+@import  'variables';
+
+div.row {
+  padding: 0.2rem;
+  & .col:nth-child(1), .col:nth-child(3) {
+      color: $primary--blue;
+    font-weight: bold;
+    }
+  }
+
+
+
