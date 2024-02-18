@@ -3,23 +3,25 @@
          [tableStyle]="{'min-width': '50rem'}" stateStorage="session" stateKey="tasktable-session">
 
   <ng-template pTemplate="caption">
-    <div class="mb-3">
+    <div>
 
       <div class="row">
-        <div class="col-2 d-flex">
-          <div >
-            <p-button icon="pi pi-file-excel" pTooltip="Eksport do Excel" [rounded]="true" [text]="true"
-                      (click)="openExcelExportModal()"></p-button>
-          </div>
+        <div class="col">
+          <div class="d-flex">
+            <div>
+              <p-button icon="pi pi-file-excel" pTooltip="Eksport do Excel" [rounded]="true" [text]="true"
+                        (click)="openExcelExportModal()"></p-button>
+            </div>
 
-          <div >
-            <p-button [rounded]="true" [text]="true" icon="pi pi-chevron-left" (click)="prev()"
-                      [disabled]="isFirstPage()"></p-button>
-          </div>
-          <div >
-            <p-button [rounded]="true" [text]="true" icon="pi pi-chevron-right" (click)="next()"
-                      [disabled]="isLastPage()"></p-button>
+            <div>
+              <p-button [rounded]="true" [text]="true" icon="pi pi-chevron-left" (click)="prev()"
+                        [disabled]="isFirstPage()"></p-button>
+            </div>
+            <div>
+              <p-button [rounded]="true" [text]="true" icon="pi pi-chevron-right" (click)="next()"
+                        [disabled]="isLastPage()"></p-button>
 
+            </div>
           </div>
         </div>
 
