@@ -46,7 +46,6 @@ export class ExcelExportComponent {
 
   downloadFile() {
     let link = document.createElement('a');
-    link.download = 'Wygenrowany-plik-excel.xlsx';
     link.href = '/assets/data/wygenerowany-dokument.xlsx';
     link.click();
 
